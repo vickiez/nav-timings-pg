@@ -34,12 +34,12 @@
           const domainLookupEnd = entry.domainLookupEnd;
           const fetchStart = entry.fetchStart;
           
-          window.performance.mark("connectStart", { startTime: connectStart});
-          window.performance.mark("connectEnd", { startTime: connectEnd});
-          window.performance.mark("requestStart", { startTime: requestStart});
-          window.performance.mark("domainLookupStart", { startTime: domainLookupStart});
-          window.performance.mark("domainLookupEnd", { startTime: domainLookupEnd});
-          window.performance.mark("fetchStart", { startTime: fetchStart});    
+          window.performance.mark("connectStartVZ", { startTime: connectStart});
+          window.performance.mark("connectEndVZ", { startTime: connectEnd});
+          window.performance.mark("requestStartVZ", { startTime: requestStart});
+          window.performance.mark("domainLookupStartVZ", { startTime: domainLookupStart});
+          window.performance.mark("domainLookupEndVZ", { startTime: domainLookupEnd});
+          window.performance.mark("fetchStartVZ", { startTime: fetchStart});    
           
           // Store metrics as an object
           requestTimings.push({
